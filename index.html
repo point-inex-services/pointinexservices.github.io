@@ -1,0 +1,917 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Point Inex Services | Custom Media Walls & TV Mounting in Sarasota County, FL</title>
+  <meta name="description" content="Point Inex Services builds custom media walls, TV mounts, cable hiding, accent walls, and light renovations across Sarasota County, FL (North Port, Venice, Sarasota, Wellen Park). Call or text for a fast estimate." />
+
+  <!-- Basic LocalBusiness Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Point Inex Services",
+    "description":"Custom media walls, TV mounting, cable hiding, fireplace/media wall builds, accent walls, and light renovation work in Sarasota County, FL.",
+    "areaServed":[
+      {"@type":"City","name":"North Port","address":{"@type":"PostalAddress","addressRegion":"FL","addressCountry":"US"}},
+      {"@type":"City","name":"Venice","address":{"@type":"PostalAddress","addressRegion":"FL","addressCountry":"US"}},
+      {"@type":"City","name":"Sarasota","address":{"@type":"PostalAddress","addressRegion":"FL","addressCountry":"US"}},
+      {"@type":"City","name":"Wellen Park","address":{"@type":"PostalAddress","addressRegion":"FL","addressCountry":"US"}}
+    ],
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Sarasota County",
+      "addressRegion":"FL",
+      "addressCountry":"US"
+    },
+    "telephone":"+1-000-000-0000",
+    "email":"you@example.com",
+    "url":"https://example.com",
+    "image":"https://example.com/your-hero-photo.jpg",
+    "priceRange":"$$",
+    "sameAs":[
+      "https://www.facebook.com/yourpage",
+      "https://www.instagram.com/yourpage"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a30;
+      --muted:#a9b4cf;
+      --text:#eaf0ff;
+      --brand:#64ffda;
+      --brand2:#7aa7ff;
+      --stroke:rgba(255,255,255,.10);
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 15% -10%, rgba(100,255,218,.25), transparent 55%),
+        radial-gradient(900px 500px at 95% 0%, rgba(122,167,255,.22), transparent 50%),
+        radial-gradient(900px 600px at 50% 115%, rgba(124,92,255,.18), transparent 55%),
+        var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .nav{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.55);
+      border-bottom:1px solid var(--stroke);
+    }
+    .nav-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; text-decoration:none;
+      font-weight:800; letter-spacing:.2px;
+    }
+    .logo{
+      width:34px; height:34px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(100,255,218,.9), rgba(122,167,255,.9));
+      box-shadow: 0 12px 30px rgba(100,255,218,.12);
+    }
+    .nav-links{
+      display:flex; flex-wrap:wrap; gap:10px;
+      align-items:center; justify-content:flex-end;
+    }
+    .nav-links a{
+      text-decoration:none;
+      color:rgba(234,240,255,.85);
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-size:14px;
+    }
+    .nav-links a:hover{
+      border-color: var(--stroke);
+      background: rgba(255,255,255,.04);
+    }
+    .chip{
+      font-size:12px;
+      color: rgba(234,240,255,.85);
+      border:1px solid var(--stroke);
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.03);
+      white-space:nowrap;
+    }
+
+    /* Buttons */
+    .btns{display:flex; flex-wrap:wrap; gap:12px; margin-top:18px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius:14px;
+      text-decoration:none;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      font-weight:700;
+    }
+    .btn:hover{transform: translateY(-1px); transition: .15s ease}
+    .btn-primary{
+      background: linear-gradient(135deg, rgba(100,255,218,.18), rgba(122,167,255,.15));
+      border-color: rgba(100,255,218,.30);
+    }
+    .btn-ghost{
+      background: rgba(255,255,255,.02);
+    }
+    .btn small{font-weight:600; opacity:.85}
+
+    /* Hero */
+    .hero{
+      padding:42px 0 22px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .hero h1{
+      margin:0 0 10px;
+      font-size: clamp(30px, 3.2vw, 52px);
+      line-height:1.06;
+      letter-spacing:-.8px;
+    }
+    .subhead{
+      margin: 0;
+      color: rgba(234,240,255,.86);
+      font-size: clamp(15px, 1.35vw, 18px);
+      max-width: 56ch;
+    }
+    .trust{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top:16px;
+    }
+    .hero-card{
+      border:1px solid var(--stroke);
+      border-radius: var(--radius2);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      display:flex; flex-direction:column;
+    }
+    .hero-photo{
+      aspect-ratio: 4/3;
+      background:
+        linear-gradient(135deg, rgba(100,255,218,.14), rgba(122,167,255,.10)),
+        url("PASTE_YOUR_HERO_PHOTO_URL_HERE.jpg") center/cover no-repeat;
+      border-bottom:1px solid var(--stroke);
+    }
+    .hero-photo .photo-note{
+      padding:12px;
+      font-size:12px;
+      color: rgba(234,240,255,.75);
+      background: rgba(11,18,32,.35);
+      width: fit-content;
+      margin: 12px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: 999px;
+    }
+    .hero-card-body{padding:16px 16px 18px}
+    .hero-card-title{font-weight:800; margin:0 0 6px; font-size:16px}
+    .hero-card-body p{margin:0; color:rgba(234,240,255,.82); font-size:14px}
+    .mini-list{margin:12px 0 0; padding:0; list-style:none; display:grid; gap:8px}
+    .mini-list li{
+      display:flex; gap:10px; align-items:flex-start;
+      color: rgba(234,240,255,.85);
+      font-size:14px;
+    }
+    .dot{
+      width:10px; height:10px; border-radius:999px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      margin-top:5px;
+      flex: 0 0 auto;
+    }
+
+    /* Sections */
+    section{padding:36px 0}
+    .section-head{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:14px; margin-bottom:16px;
+    }
+    h2{
+      margin:0;
+      font-size: clamp(22px, 2.2vw, 32px);
+      letter-spacing:-.4px;
+    }
+    .section-head p{
+      margin:0;
+      color: rgba(234,240,255,.78);
+      max-width: 65ch;
+      font-size:14px;
+    }
+
+    /* Cards grid */
+    .grid{
+      display:grid;
+      gap:14px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .card{
+      border:1px solid var(--stroke);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.03);
+      box-shadow: 0 10px 34px rgba(0,0,0,.20);
+      padding:16px;
+    }
+    .card h3{margin:0 0 8px; font-size:16px; letter-spacing:-.2px}
+    .card p{margin:0; color: rgba(234,240,255,.78); font-size:14px}
+    .kicker{
+      font-size:12px; color: rgba(234,240,255,.70);
+      margin: 8px 0 0;
+    }
+
+    /* Services */
+    .service-card{grid-column: span 4}
+    .service-icon{
+      width:40px; height:40px; border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(135deg, rgba(100,255,218,.18), rgba(122,167,255,.12));
+      display:grid; place-items:center;
+      margin-bottom:10px;
+      font-weight:900;
+      color: rgba(234,240,255,.92);
+    }
+
+    /* Why us */
+    .why-card{grid-column: span 4}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      font-size:12px;
+      color: rgba(234,240,255,.80);
+      border:1px solid var(--stroke);
+      padding:6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.02);
+    }
+
+    /* Gallery */
+    .gallery{grid-template-columns: repeat(12, 1fr)}
+    .shot{
+      grid-column: span 4;
+      border-radius: var(--radius);
+      overflow:hidden;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      box-shadow: 0 12px 40px rgba(0,0,0,.25);
+    }
+    .shot .img{
+      aspect-ratio: 4/3;
+      background:
+        linear-gradient(135deg, rgba(100,255,218,.12), rgba(122,167,255,.10)),
+        url("PASTE_GALLERY_IMAGE_URL_HERE.jpg") center/cover no-repeat;
+    }
+    .shot .cap{
+      padding:10px 12px;
+      font-size:13px;
+      color: rgba(234,240,255,.80);
+      border-top:1px solid var(--stroke);
+    }
+
+    /* Reviews */
+    .review{grid-column: span 4}
+    .stars{letter-spacing:1px; color: rgba(100,255,218,.95); font-size:14px}
+    blockquote{margin:10px 0 0; color: rgba(234,240,255,.82); font-size:14px}
+    .who{margin-top:10px; font-size:13px; color: rgba(234,240,255,.70)}
+
+    /* Process */
+    .step{grid-column: span 4}
+    .step-num{
+      width:34px;height:34px;border-radius:12px;
+      display:grid; place-items:center;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      font-weight:900;
+      margin-bottom:10px;
+    }
+
+    /* FAQ */
+    details{
+      border:1px solid var(--stroke);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.03);
+      padding:14px 14px;
+    }
+    details + details{margin-top:10px}
+    summary{
+      cursor:pointer;
+      font-weight:800;
+      list-style:none;
+      outline:none;
+    }
+    summary::-webkit-details-marker{display:none}
+    details p{margin:10px 0 0; color: rgba(234,240,255,.78); font-size:14px}
+
+    /* Contact */
+    .contact-wrap{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap:14px;
+      align-items:start;
+    }
+    form{
+      display:grid;
+      gap:10px;
+    }
+    label{font-size:13px; color: rgba(234,240,255,.80)}
+    input, textarea, select{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height:120px; resize: vertical}
+    input::placeholder, textarea::placeholder{color: rgba(234,240,255,.45)}
+    .form-row{display:grid; grid-template-columns: 1fr 1fr; gap:10px}
+    .fineprint{font-size:12px; color: rgba(234,240,255,.62); margin: 6px 0 0}
+
+    /* Footer */
+    footer{
+      padding: 24px 0 40px;
+      border-top:1px solid var(--stroke);
+      background: rgba(11,18,32,.35);
+    }
+    .footer-grid{
+      display:flex; flex-wrap:wrap; gap:12px;
+      align-items:center; justify-content:space-between;
+    }
+    .footer-grid small{color: rgba(234,240,255,.62)}
+    .footer-links{display:flex; gap:10px; flex-wrap:wrap}
+    .footer-links a{
+      font-size:13px;
+      color: rgba(234,240,255,.70);
+      text-decoration:none;
+      padding:6px 10px;
+      border-radius: 999px;
+      border:1px solid transparent;
+    }
+    .footer-links a:hover{border-color:var(--stroke); background: rgba(255,255,255,.03)}
+
+    /* Utility */
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);
+      margin: 22px 0 0;
+    }
+    .note{
+      font-size:13px;
+      color: rgba(234,240,255,.72);
+      margin: 10px 0 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns: 1fr; }
+      .contact-wrap{grid-template-columns: 1fr}
+      .service-card,.why-card,.review,.step,.shot{grid-column: span 12}
+      .shot .img{aspect-ratio: 16/10}
+      .nav-links{display:none}
+    }
+    @media (max-width: 520px){
+      .form-row{grid-template-columns: 1fr}
+      .btn{width:100%}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =========================
+    QUICK SETUP (CTRL+F these):
+    1) PHONE_NUMBER: (e.g., +1941XXXXXXX)
+    2) DISPLAY_PHONE: (e.g., (941) XXX-XXXX)
+    3) YOUR_EMAIL
+    4) PASTE_YOUR_*_PHOTO_URL_HERE.jpg
+  ========================== -->
+
+  <!-- Replace these placeholders in the links below:
+    PHONE_NUMBER      -> +1-941-555-1234 (include +1)
+    DISPLAY_PHONE     -> (941) 555-1234
+    YOUR_EMAIL        -> you@domain.com
+  -->
+
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="#top" aria-label="Point Inex Services home">
+          <span class="logo" aria-hidden="true"></span>
+          <span>Point Inex Services</span>
+          <span class="chip">Sarasota County, FL</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#process">Process</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="btns" style="margin:0">
+          <a class="btn btn-primary" href="tel:PHONE_NUMBER" aria-label="Call Point Inex Services">
+            📞 <span>Call <small>DISPLAY_PHONE</small></span>
+          </a>
+          <a class="btn btn-ghost" href="sms:PHONE_NUMBER" aria-label="Text Point Inex Services">
+            💬 <span>Text <small>Fast estimate</small></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h1>Custom media walls that look built-in — not “afterthought.”</h1>
+            <p class="subhead">
+              We design and build clean, modern setups: TV mounting, cable hiding, fireplace/media wall builds, accent walls,
+              and light renovation work — done right for Sarasota County homeowners.
+            </p>
+
+            <div class="trust" aria-label="Trust signals">
+              <span class="badge">✅ Local & reliable</span>
+              <span class="badge">✅ Clean finish + neat wiring</span>
+              <span class="badge">✅ Clear pricing & timelines</span>
+            </div>
+
+            <div class="btns">
+              <a class="btn btn-primary" href="tel:PHONE_NUMBER">📞 Call for an estimate</a>
+              <a class="btn btn-ghost" href="sms:PHONE_NUMBER">💬 Text photos for a quick quote</a>
+              <a class="btn btn-ghost" href="#gallery">🖼️ See our work</a>
+            </div>
+
+            <p class="note">
+              Serving <strong>North Port, Venice, Sarasota, Wellen Park</strong> — especially new construction neighborhoods.
+            </p>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <ul class="mini-list" aria-label="Key benefits">
+              <li><span class="dot" aria-hidden="true"></span><span><strong>Modern look:</strong> flush mounting, hidden wires, and clean lines.</span></li>
+              <li><span class="dot" aria-hidden="true"></span><span><strong>Built to last:</strong> solid framing, proper anchors, and safe routing.</span></li>
+              <li><span class="dot" aria-hidden="true"></span><span><strong>Low-stress:</strong> we show up on time and leave the space clean.</span></li>
+            </ul>
+          </div>
+
+          <aside class="hero-card" aria-label="Featured project">
+            <div class="hero-photo" role="img" aria-label="Featured media wall project photo">
+              <div class="photo-note">📸 Paste your hero photo URL in CSS</div>
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-title">Want a clean “built-in” look?</p>
+              <p>
+                Send us your wall photo + TV size + rough idea. We’ll reply with options and a ballpark estimate.
+              </p>
+              <div class="btns" style="margin-top:14px">
+                <a class="btn btn-primary" href="sms:PHONE_NUMBER">💬 Text now</a>
+                <a class="btn btn-ghost" href="#contact">✍️ Request estimate</a>
+              </div>
+              <p class="kicker">Tip: include ceiling height + preferred style (modern, coastal, classic).</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Services</h2>
+            <p>Focused on high-impact upgrades that make your space look finished — with details that hold up.</p>
+          </div>
+        </div>
+
+        <div class="grid" role="list">
+          <div class="card service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">TV</div>
+            <h3>TV Mounting</h3>
+            <p>Secure mounting, level alignment, and placement that fits your seating and room layout.</p>
+            <p class="kicker">Includes bracket install (bracket not included unless requested).</p>
+          </div>
+
+          <div class="card service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">⛓️</div>
+            <h3>Cable Hiding</h3>
+            <p>Clean wire routing, in-wall options (when possible), and a tidy finished look.</p>
+            <p class="kicker">Great for new builds + open living rooms.</p>
+          </div>
+
+          <div class="card service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">🧱</div>
+            <h3>Custom Media Walls</h3>
+            <p>Built-ins, slat walls, paneling, floating shelves — designed to match your home style.</p>
+            <p class="kicker">Modern, coastal, or clean minimal.</p>
+          </div>
+
+          <div class="card service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">🔥</div>
+            <h3>Fireplace + Media Wall Builds</h3>
+            <p>Framing, finishes, and a cohesive feature wall that becomes the center of the room.</p>
+            <p class="kicker">We’ll guide sizing + layout for best look.</p>
+          </div>
+
+          <div class="card service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">🎨</div>
+            <h3>Accent Walls</h3>
+            <p>Texture, trim, paneling, and design details that elevate new construction interiors.</p>
+            <p class="kicker">Perfect for living rooms + master bedrooms.</p>
+          </div>
+
+          <div class="card service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">🛠️</div>
+            <h3>Light Renovation Work</h3>
+            <p>Small upgrades that help complete the room — ask us what’s possible for your space.</p>
+            <p class="kicker">Fast, clean, and detail-focused.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Why homeowners choose Point Inex</h2>
+            <p>Professional results without the corporate runaround. Clear communication, solid craftsmanship, clean finishes.</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="card why-card">
+            <h3>Clean, built-in finish</h3>
+            <p>We focus on symmetry, proportions, and clean lines — so your wall looks designed, not improvised.</p>
+          </div>
+          <div class="card why-card">
+            <h3>Strong structure + safe routing</h3>
+            <p>Proper anchors, solid framing, and thoughtful cable paths. We build it right, not just fast.</p>
+          </div>
+          <div class="card why-card">
+            <h3>Local + responsive</h3>
+            <p>Quick replies, honest timelines, and a clean work area. We respect your home and your time.</p>
+          </div>
+        </div>
+
+        <div class="btns" style="margin-top:18px">
+          <a class="btn btn-primary" href="tel:PHONE_NUMBER">📞 Call: DISPLAY_PHONE</a>
+          <a class="btn btn-ghost" href="sms:PHONE_NUMBER">💬 Text: get a quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Gallery</h2>
+            <p>Replace the placeholder images with your real project photos (before/after works great).</p>
+          </div>
+          <p class="section-head p" style="opacity:.9">
+            Tip: Use bright, straight-on shots.
+          </p>
+        </div>
+
+        <div class="grid gallery" aria-label="Project photo gallery">
+          <!-- Paste your image URLs below (or keep placeholders). -->
+          <figure class="shot">
+            <div class="img" style='background-image:
+              linear-gradient(135deg, rgba(100,255,218,.12), rgba(122,167,255,.10)),
+              url("PASTE_GALLERY_1_URL_HERE.jpg");'></div>
+            <figcaption class="cap">Media wall + cable hiding</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="img" style='background-image:
+              linear-gradient(135deg, rgba(100,255,218,.12), rgba(122,167,255,.10)),
+              url("PASTE_GALLERY_2_URL_HERE.jpg");'></div>
+            <figcaption class="cap">TV mount + clean finish</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="img" style='background-image:
+              linear-gradient(135deg, rgba(100,255,218,.12), rgba(122,167,255,.10)),
+              url("PASTE_GALLERY_3_URL_HERE.jpg");'></div>
+            <figcaption class="cap">Accent wall detail</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="img" style='background-image:
+              linear-gradient(135deg, rgba(100,255,218,.12), rgba(122,167,255,.10)),
+              url("PASTE_GALLERY_4_URL_HERE.jpg");'></div>
+            <figcaption class="cap">Fireplace + media wall build</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="img" style='background-image:
+              linear-gradient(135deg, rgba(100,255,218,.12), rgba(122,167,255,.10)),
+              url("PASTE_GALLERY_5_URL_HERE.jpg");'></div>
+            <figcaption class="cap">Floating shelf + trim</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="img" style='background-image:
+              linear-gradient(135deg, rgba(100,255,218,.12), rgba(122,167,255,.10)),
+              url("PASTE_GALLERY_6_URL_HERE.jpg");'></div>
+            <figcaption class="cap">Modern feature wall</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Reviews</h2>
+            <p>Swap these samples with real reviews from Facebook, Google, Yelp, or Nextdoor.</p>
+          </div>
+        </div>
+
+        <div class="grid" aria-label="Customer reviews">
+          <div class="card review">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <blockquote>
+              “Our media wall came out perfect — super clean lines, hidden cables, and the TV placement is exactly right.
+              Great communication and they left the room spotless.”
+            </blockquote>
+            <div class="who">— Amanda R., Venice</div>
+          </div>
+
+          <div class="card review">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <blockquote>
+              “Fast quote, showed up on time, and the finish looks like it came with the house. Highly recommend for new construction upgrades.”
+            </blockquote>
+            <div class="who">— Jason M., Wellen Park</div>
+          </div>
+
+          <div class="card review">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <blockquote>
+              “Professional work and honest advice. They helped us choose a layout that fit our space and budget — it looks amazing.”
+            </blockquote>
+            <div class="who">— Denise L., North Port</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Our simple process</h2>
+            <p>Quick, clear, and built around your schedule.</p>
+          </div>
+        </div>
+
+        <div class="grid" aria-label="Process steps">
+          <div class="card step">
+            <div class="step-num">1</div>
+            <h3>Send details</h3>
+            <p>Text or submit photos of the wall + TV size + what style you want. We’ll ask a few quick questions.</p>
+          </div>
+          <div class="card step">
+            <div class="step-num">2</div>
+            <h3>Estimate + plan</h3>
+            <p>You’ll get clear options and pricing. We confirm timeline, materials, and the exact layout.</p>
+          </div>
+          <div class="card step">
+            <div class="step-num">3</div>
+            <h3>Build + clean finish</h3>
+            <p>We complete the work with attention to detail — then clean up so your space is ready to enjoy.</p>
+          </div>
+        </div>
+
+        <div class="btns" style="margin-top:18px">
+          <a class="btn btn-primary" href="sms:PHONE_NUMBER">💬 Text photos to start</a>
+          <a class="btn btn-ghost" href="#contact">✍️ Request an estimate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>FAQ</h2>
+            <p>Quick answers to common questions. If you don’t see yours, call or text us.</p>
+          </div>
+        </div>
+
+        <details>
+          <summary>Do you do in-wall cable hiding?</summary>
+          <p>When the wall type and layout allow it, yes. We’ll review your wall and recommend the cleanest, safest option for your setup.</p>
+        </details>
+
+        <details>
+          <summary>Can you help with design and layout?</summary>
+          <p>Absolutely. We’ll suggest sizes, spacing, and finishes so the wall looks balanced and intentional in your room.</p>
+        </details>
+
+        <details>
+          <summary>How long does a media wall build take?</summary>
+          <p>It depends on the design complexity and finish. Many projects take 1–3 days; larger builds may take longer. We’ll give you a clear timeline up front.</p>
+        </details>
+
+        <details>
+          <summary>Do you supply materials?</summary>
+          <p>We can supply materials, or work with materials you’ve purchased — whichever is easier for you. We’ll confirm the plan before starting.</p>
+        </details>
+
+        <details>
+          <summary>What neighborhoods do you work in?</summary>
+          <p>We serve Sarasota County including North Port, Venice, Sarasota, and Wellen Park — especially newer communities and new construction homes.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section id="service-area">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Service area</h2>
+            <p>Local service across Sarasota County, FL. If you’re nearby and not sure — text us.</p>
+          </div>
+        </div>
+
+        <div class="grid" aria-label="Service area list">
+          <div class="card" style="grid-column: span 6">
+            <h3>Primary areas</h3>
+            <p>
+              <strong>North Port</strong> • <strong>Venice</strong> • <strong>Sarasota</strong> • <strong>Wellen Park</strong>
+            </p>
+            <p class="kicker">New construction neighborhoods are a perfect fit for clean media wall upgrades.</p>
+          </div>
+          <div class="card" style="grid-column: span 6">
+            <h3>Fast estimate tips</h3>
+            <p>Send a wall photo, ceiling height, TV size, and your style idea (modern/coastal/classic). We’ll reply with options.</p>
+            <p class="kicker">Text: <strong>DISPLAY_PHONE</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Contact</h2>
+            <p>Call or text for the fastest response. Or send a request below and we’ll get back to you ASAP.</p>
+          </div>
+        </div>
+
+        <div class="contact-wrap">
+          <div class="card">
+            <h3 style="margin-top:0">Request an estimate</h3>
+
+            <!-- This form is front-end only. To make it work:
+                 - connect to a service (Formspree, Netlify Forms, etc.), or
+                 - replace action="" with your backend endpoint.
+            -->
+            <form action="" method="post">
+              <div class="form-row">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" placeholder="(941) ___-____" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="city">City</label>
+                  <select id="city" name="city">
+                    <option value="">Select…</option>
+                    <option>North Port</option>
+                    <option>Venice</option>
+                    <option>Sarasota</option>
+                    <option>Wellen Park</option>
+                    <option>Other (Sarasota County)</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="service">Service</label>
+                  <select id="service" name="service">
+                    <option value="">Select…</option>
+                    <option>Custom media wall</option>
+                    <option>TV mounting</option>
+                    <option>Cable hiding</option>
+                    <option>Fireplace/media wall build</option>
+                    <option>Accent wall</option>
+                    <option>Light renovation</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="message">Project details</label>
+                <textarea id="message" name="message" placeholder="Tell us what you want done. Include TV size, wall type, and any style ideas."></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="button" onclick="alert('Form is a placeholder. For fastest response, tap Call or Text.');">
+                ✅ Submit request
+              </button>
+
+              <p class="fineprint">
+                Fastest response: <a href="sms:PHONE_NUMBER"><strong>Text DISPLAY_PHONE</strong></a> with photos of the wall.
+              </p>
+            </form>
+          </div>
+
+          <aside class="card">
+            <h3 style="margin-top:0">Call / Text</h3>
+            <p><strong>Phone:</strong> <a href="tel:PHONE_NUMBER">DISPLAY_PHONE</a></p>
+            <p><strong>Text:</strong> <a href="sms:PHONE_NUMBER">Send a message</a></p>
+            <p><strong>Email:</strong> <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <h3>What to send for a quick quote</h3>
+            <ul class="mini-list">
+              <li><span class="dot" aria-hidden="true"></span><span>Photo(s) of the wall (wide + close-up)</span></li>
+              <li><span class="dot" aria-hidden="true"></span><span>TV size (inches) + bracket info (if you have it)</span></li>
+              <li><span class="dot" aria-hidden="true"></span><span>Ceiling height + any inspiration photo</span></li>
+            </ul>
+
+            <div class="btns">
+              <a class="btn btn-primary" href="tel:PHONE_NUMBER">📞 Call now</a>
+              <a class="btn btn-ghost" href="sms:PHONE_NUMBER">💬 Text photos</a>
+            </div>
+
+            <p class="kicker">Local service • Clean finishes • Clear communication</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span class="logo" aria-hidden="true"></span>
+          <div>
+            <strong>Point Inex Services</strong><br />
+            <small>Custom media walls • TV mounting • Sarasota County, FL</small>
+          </div>
+        </div>
+
+        <div class="footer-links" aria-label="Footer links">
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <small>© <span id="year"></span> Point Inex Services. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+```
